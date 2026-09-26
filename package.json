@@ -1,0 +1,23 @@
+{
+  "name": "bday25-save-the-date",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Save the date animato per il 25° compleanno — Remotion",
+  "scripts": {
+    "studio": "remotion studio",
+    "render:story": "remotion render SaveTheDateStory output/save-the-date-story-1080x1920.mp4",
+    "render:square": "remotion render SaveTheDateSquare output/save-the-date-square-1080x1080.mp4",
+    "render": "npm run render:story && npm run render:square",
+    "sfx": "node scripts/generate-sfx.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.529",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.529"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
